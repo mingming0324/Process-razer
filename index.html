@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Process-OY</title>
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"></script>
+  <script src="./script.js" defer></script>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- GSAP-SCROLL -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+      <!-- FONT -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,200&display=swap" rel="stylesheet">
+      <script src="https://c.webfontfree.com/c.js?f=SONGERGrotesque-Medium" type="text/javascript"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- main -->
+  <section class="main con">
+    <div class="main_wrap flex">
+      <div class="main-left_text-wrap flex">
+        <span class="Static">Static Website</span>
+
+        <div class="main_left-box flex">
+          <div class="main-title-box flex">
+            <span class="number">01.</span>
+  
+            <div class="main-titile flex">
+              <h1>OY</h1>
+              <span class="title-text">오와이 웹사이트 리디자인</span>
+            </div>
+          </div>
+  
+          <div class="blid-box flex">
+            <div class="blid flex">
+              <h5>Contribution</h5>
+              <span class="Contr-text">
+                1인 프로젝트 (UI디자인 100%)
+              </span>
+            </div>
+  
+            <div class="da-too flex">
+              <div class="date flex">
+                <h5>Date</h5>
+                <span class="date-text">
+                  2025.07.22 ~ 2025.09.24
+                </span>
+              </div>
+              <div class="tool flex">
+                <h5>Tool</h5>
+                <div class="tool-img flex">
+                  <img src="./imgs/tool-icon_1.png" alt="">
+                  <img src="./imgs/tool-icon_2.png" alt="">
+                  <img src="./imgs/tool-icon_3.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="main-img_text-box flex">
+        <div class="main_img-box">
+          <img src="./imgs/main.png" alt="">
+        </div>
+
+        <div class="main-right_text-box flex">
+          <span class="name">
+            2025, Kim Minche
+          </span>
+          <span class="grid">
+            1920 GRID SYSTEM
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- main -->
+
+<!-- overview -->
+<section class="overview con">
+  <div class="overv_wrap">
+    <div class="overv_text-wrap flex">
+      <span class="overview-text">Overview</span>
+
+      <div class="overv_text-box flex">
+        <h1><span class="title-bold">기하학적 구조</span>와 <br>
+          <span class="title-bold">스포티한 에너지</span>를 입힌 패션 브랜드</h1>
+
+          <p>오와이는 자유롭고 개방적인 태도를 기반으로, 스포티한 에너지와 기하학적 구조 <br>
+            미를 결합한 감각적인 패션 브랜드입니다. 이번 리디자인은 브랜드의 독창성을  <br>
+            시각적·인터랙티브하게 표현할 수 있도록 방향을 잡았습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- overview -->
+
+<!-- Background -->
+<section class="Background con">
+  <div class="backg_wrap flex">
+    <div class="backg_text-box flex">
+      <h1>background</h1>
+      <p>브랜드 인지도는 높지만, 기존 웹사이트는 타 브랜드와의 차별성이 부족했습니다. 이를 보완하기 위해 <br> 
+        ‘열린 공간, 스포티, 기하학’ 키워드를 기반으로 새로운 인터랙션과 비주얼을 제안합니다.</p>
+    </div>
+  </div>
+</section>
+<!-- Background -->
+
+<!-- Usability Testing -->
+<section class="Usability-Testing con">
+  <div class="usab_wrap flex">
+    <div class="usab_icon usab_icon-1">
+      <img src="./imgs/usabil_img1.png" alt="">
+    </div>
+    <div class="usab_icon usab_icon-2">
+      <img src="./imgs/usabil_img2.png" alt="">
+    </div>
+
+    <div class="usab_text-box flex">
+      <h1>Usability Testing</h1>
+      <span>오와이만의 특색을 살린 리디자인</span>
+    </div>
+
+    <div class="usab_content-box flex">
+      <div class="usab_content-text flex">
+        <span>AS-IS</span>
+        <span>TO-BE</span>
+      </div>
+
+      <div class="usab_content flex">
+        <div class="content_asis">
+          <ul class="as-is flex">
+            <li class="as-is_item">
+              <span>
+                글로벌하게 주목받는 브랜드임에도, 타 브랜드와 <br>
+                유사한 레이아웃으로 구성되어 독창성이 부족함.</span>
+            </li>
+            <li class="as-is_item">
+              <span>
+                추구하는 키워드가 웹사이트 경험 전반에 반영되지 <br>
+                않아, 브랜드 철학이 시각적으로 연결되지 않음.
+              </span>
+            </li>
+            <li class="as-is_item">
+              <span>
+                인터랙션, 동적 요소 부족으로 인해 브랜드의 <br>
+                역동성과 현대적 감각을 충분히 전달하지 못함.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="content_line flex">
+          <ul class="c-line-box flex">
+            <li class="c-line"><img src="./imgs/content-line.png" alt=""></li>
+            <li class="c-line"><img src="./imgs/content-line.png" alt=""></li>
+            <li class="c-line"><img src="./imgs/content-line.png" alt=""></li>
+          </ul>
+        </div>
+
+        <div class="content_tobe">
+          <ul class="to-be flex">
+            <li class="tobe-item">
+              <span>
+                단순한 구조에서 벗어나, 오와이만의 공간감과 <br>
+                스포티한 에너지 레이아웃으로  차별성을 강화.</span>
+            </li>
+            <li class="tobe-item">
+              <span>
+                키워드를 구체적으로 풀어내어, 타이포그래피와 그래픽 <br>
+                모티프에 반영하고 브랜드의 독창적 세계관을 보여줌.</span>
+            </li>
+            <li class="tobe-item">
+              <span>
+                인터랙션, 스크롤 애니메이션 등을 적용해 사용자가 브랜드 <br>
+                의 에너지와 움직임을 직관적으로 느낄 수 있도록 개선.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Usability Testing -->
+
+<!-- Design Cencept -->
+<section class="Design-Cencept con">
+  <div class="de-cent_wrap flex">
+    <div class="de-cent_text-box flex">
+      <h1 class="de-cent">Design Cencept</h1>
+      <p>브랜드가  가지고 있는 스포티하고, 기하학적인 <br>
+        무드를 살려 새로운 브랜드 웹사이트 컨셉을 도출 </p>
+    </div>
+
+    <div class="de-cent_item-box flex">
+      <div class="Circle-box flex">
+        <div class="Circle-1 flex">
+          <span>기하학적인 <br>
+            도형</span>
+        </div>
+        <div class="Circle-2 flex">
+          <span>스포티한 <br>
+            인터렉션</span>
+        </div>
+        <div class="Circle-3 flex">
+          <span>
+            기하학적이고 스포티한 <br>
+            아이덴티티를 경험할 수 있는 <br>
+            웹사이트</span>
+        </div>
+      </div>
+
+      <div class="de-cent_item-text">
+        <ul class="de-cent_text flex">
+          <li class="de_cent_item flex">
+            <h5>Geometric shapes</h5>
+            <p>각 요소 간 간결한 대비를 통해 명확한 형태감과  <br>
+              정제된 브랜드 아이덴티티를 구축하였습니다.</p>
+          </li>
+          <li class="de_cent_item flex">
+            <h5>Sporty Interaction</h5>
+            <p>스크롤, 호버, 클릭 등 사용자의 움직임에 따라 유기적으로 <br> 
+              반응하는 다이내믹한 인터랙션을 구현하였습니다.</p>
+          </li>
+          <li class="de_cent_item flex">
+            <h5>Maximize mode</h5>
+            <p>불필요한 장식을 배제하고 콘텐츠와 비주얼이 <br>
+              주인공이 되는 풀스크린 레이아웃을 구성한다</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Design Cencept -->
+
+<!-- Design System -->
+<section class="Design-System con">
+  <div class="de-sys_wrap flex">
+    <div class="typeface flex">
+      <span class="de-syetem">Design-System</span>
+
+      <div class="de-sys-item flex">
+        <div class="de-sys-title">
+          <h1>TYPEFACE</h1>
+        </div>
+        
+
+        <div class="typo-text-box flex">
+          <div class="typo-text">
+            <ul class="typo flex">
+              <li class="SONGER"><span>SONGER Grotesque</span></li>
+              <li class="Racing"><span>Racing Sans One</span></li>
+              <li class="Pretendad"><span>Pretendad</span></li>
+            </ul>
+          </div>
+
+          <div class="typo-img-box">
+            <img src="./imgs/de-system_img1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="color flex">
+      <div class="de-sys-title">
+        <h1 class="color-text">COLOR</h1>
+      </div>
+
+
+      <div class="color-Pallet flex">
+        <ul class="pallet flex">
+          <li class="flex">
+            <div class="color-chip color-chip-1"></div>
+
+            <div class="color-name flex">
+              <span class="fff">#ffffff</span>
+              <span class="name">White</span>
+            </div>
+          </li>
+          <li class="flex">
+            <div class="color-chip color-chip-2"></div>
+
+            <div class="color-name flex">
+              <span class="fff">#000000</span>
+              <span class="name">Black</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Design System -->
+
+<!-- Design Output -->
+<section class="Design-Output con">
+  <div class="de-outp_wrap flex">
+    <div class="finish-line">
+      <img src="./imgs/finish-line.png" alt="">
+    </div>
+    <div class="de-outp_text-box de-outp_text-box1">
+      <h5>Concept</h5>
+      <div class="de_text-box">
+        <p>
+          오와이 리디자인은 열린 공간감과 스포티한 에너지, 기하학 <br>
+          적 구조미를 중심으로 브랜드의 감각적 정체성을 시각화하고 <br>
+          단순한 상품 소개를 넘어, 움직임과 리듬이 살아 있는 디지털 <br>
+          공간으로 브랜드의 에너지를 확장했습니다.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="de-outp_img-box de-outp_img-box1 flex">
+      <img src="./imgs/finish_img1.png" alt="">
+      <img class="margin" src="./imgs/finish_img2.png" alt="">
+    </div>
+
+    <div class="de-outp_img-box de-outp_img-box2">
+      <img src="./imgs/finish_img3.png" alt="">
+
+      <div class="de-outp_text-box de-outp_text-box2">
+        <h5>Main Page</h5>
+        <p>넓은 여백과 검은 띠 그래픽을 중심으로 열린 공간감과 <br>
+          브랜드 아이덴티티를 표현했습니다. 비대칭 구조를 통 <br>
+          해 스포티하고 리듬감 있는 시각 경험을 제공합니다.</p>
+      </div>
+    </div>
+
+    <div class="de-outp_img-box de-outp_img-box3">
+      <img src="./imgs/finish_img4.png" alt="">
+
+      <div class="de-outp_text-box de-outp_text-box3">
+        <h5>brand Page</h5>
+        <p>‘OPEN YARD’라는 슬로건을 중심으로, 입체적 오브젝트와 <br>
+          반지 상품을 결합해 브랜드의 열린 철학을 시각화했습니다. <br>
+          기하학적 형태와 다층적 레이아웃을 통해 브랜드의 에너지가 <br>
+          확장되는 공간감을 표현했습니다.</p>
+      </div>
+    </div>
+
+    <div class="de-outp_img-box de-outp_img-box4">
+      <img src="./imgs/finish_img5.png  " alt="">
+
+      <div class="de-outp_text-box de-outp_text-box4">
+        <h5>Sale Page</h5>
+        <p>비주얼 대비를 활용해 스트리트 감성과 활동적인 <br>
+          분위기를 전달하고, 브랜드의 접근성을 높였습니다.</p>
+      </div>
+    </div>
+
+    <div class="de-outp_btn-box flex">
+      <a href="./OY/index.html">
+        <div class="de-outp_btn flex">
+          <h1>OY</h1>
+          <span>바로가기</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- Design Output -->
+
+
+<!-- full -->
+<section class="full con"></section>
+<!-- full -->
+</body>
+</html>

@@ -60,14 +60,21 @@
   font-weight: 900;
   font-display: swap;
 }
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
 
-.roboto-100-italic {
-  font-family: "Roboto", sans-serif;
+.dynapuff-bold {
+  font-family: "DynaPuff", system-ui;
   font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: italic;
+  font-weight: 700; /* 숫자 값으로 변경 */
+  font-style: normal;
   font-variation-settings:
     "wdth" 100;
+}
+
+.bagel-fat-one-regular {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .bebas-neue-regular {
@@ -76,8 +83,14 @@
   font-style: normal;
 }
 
-.racing-sans-one-regular {
-  font-family: "Racing Sans One", sans-serif;
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -134,7 +147,7 @@ a {
 
  /* 커스텀 */
 html {
-  background-color: #0D0D0D;
+  background-color: #121B11;
   color: #fff;
   font-family: 'Pretendard';
 }
@@ -147,7 +160,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   height: 15%;
-  background: #000;
+  background: #00FF00;
   border-radius: 10px;
 }
 
@@ -165,7 +178,8 @@ body::-webkit-scrollbar-track {
   box-sizing: border-box;
 }
 .main_wrap {
-  justify-content: space-between;
+  
+  position: relative;
 }
 
 .main-left_text-wrap {
@@ -185,6 +199,7 @@ body::-webkit-scrollbar-track {
 
 .main-left_text-wrap .main-title-box {
   flex-direction: column;
+  color: #00FF00;
 }
 
 .main-left_text-wrap .main-title-box .number {
@@ -200,6 +215,7 @@ body::-webkit-scrollbar-track {
 .main-left_text-wrap .main-title-box .main-titile h1 {
   font-size: 90px;
   font-weight: 700;
+  white-space: NOWRAP;
 }
 
 .main-left_text-wrap .main-title-box .main-titile .title-text {
@@ -221,6 +237,7 @@ body::-webkit-scrollbar-track {
 .blid-box .blid h5 {
   font-size: 16px;
   font-weight: 700;
+  color: #00FF00;
 }
 
 .blid-box .blid .Contr-text {
@@ -240,6 +257,7 @@ body::-webkit-scrollbar-track {
 
 .blid-box .da-too .date h5 {
   font-weight: 700;
+  color: #00FF00;
 }
 
 .blid-box .da-too .date .date-text {
@@ -251,6 +269,7 @@ body::-webkit-scrollbar-track {
   font-size: 16px;
   gap: 50px;
   align-items: center;
+  color: #00FF00;
 }
 
 .blid-box .da-too .tool .tool-img {
@@ -263,6 +282,9 @@ body::-webkit-scrollbar-track {
 .main-img_text-box .main-right_text-box {
   flex-direction: column;
   gap: 806px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .main-img_text-box .main-right_text-box span {
@@ -281,11 +303,13 @@ body::-webkit-scrollbar-track {
 .overv_text-wrap {
   flex-direction: column;
   gap: 28px;
+  text-align: right;
 }
 
 .overv_text-wrap .overview-text {
   font-size: 22px;
   font-weight: 500;
+  color: #00FF00;
 }
 
 .overv_text-wrap .overv_text-box {
@@ -296,6 +320,7 @@ body::-webkit-scrollbar-track {
 .overv_text-wrap .overv_text-box h1 {
   font-size: 40px;
   font-weight: 400;
+  color: #00FF00;
 }
 
 .overv_text-wrap .overv_text-box .title-bold {
@@ -315,7 +340,7 @@ body::-webkit-scrollbar-track {
 /* <!-- Background --> */
 .Background {
   box-sizing: border-box;
-  padding: 134px 588px;
+  padding: 134px 472px;
   background-image: url(./imgs/background.png);
 }
 
@@ -335,6 +360,7 @@ body::-webkit-scrollbar-track {
 .backg_text-box h1 {
   font-size: 22px;
   font-weight: 500;
+  color: #00FF00;
 }
 
 .backg_text-box p {
@@ -367,6 +393,7 @@ body::-webkit-scrollbar-track {
 .usab_text-box h1 {
   font-size: 22px;
   font-weight: 500;
+  color: #00FF00;
 }
 
 .usab_text-box span {
@@ -387,7 +414,8 @@ body::-webkit-scrollbar-track {
 .usab_content-box .usab_content-text span {
   font-size: 48px;
   font-weight: 700;
-  font-family: 'SONGERGrotesque-Medium';
+  font-family: "Anton", sans-serif;
+  color: #00FF00;
 }
 
 .usab_content {
@@ -401,8 +429,8 @@ body::-webkit-scrollbar-track {
 
 .usab_content .as-is .as-is_item {
   padding: 79px 22px;
-  background-color: #1a1a1a;
-  color: #7c7c7c;
+  background-color: #192418;
+  color: #546852;
   text-align: center;
   width: 532px;
   height: 224px;
@@ -435,8 +463,8 @@ body::-webkit-scrollbar-track {
 .usab_content .to-be .tobe-item {
   padding: 79px 22px;
   text-align: center;
-  border: 2px solid #808080;
-  box-shadow: 0 0 18px rgba(255, 255, 255, .75);
+  border: 2px solid #007900;
+  box-shadow: 0 0 18px rgba(0, 121, 0, .75);
   width: 532px;
   height: 224px;
   box-sizing: border-box;
@@ -492,6 +520,7 @@ body::-webkit-scrollbar-track {
 .de-cent_text-box .de-cent {
   font-size: 22px;
   font-weight: 500;
+  color: #00FF00;
 }
 
 .de-cent_text-box p {
@@ -529,7 +558,7 @@ body::-webkit-scrollbar-track {
   width: 255px;
   height: 255px;
   border-radius: 500px;
-  background-color: #000;
+  background-color: #00FF00;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -542,6 +571,7 @@ body::-webkit-scrollbar-track {
   text-align: center;
   transform: translateY(100%);
   opacity: 0;
+  color: #015701;
 }
 
 .Circle-box .Circle-2 {
@@ -558,7 +588,7 @@ body::-webkit-scrollbar-track {
   font-weight: 600;
   line-height: 27px;
   text-align: center;
-  color: #0D0D0D;
+  color: #015701;
   transform: translateY(100%);
   opacity: 0;
 }
@@ -568,10 +598,10 @@ body::-webkit-scrollbar-track {
   width: 298px;
   height: 298px;
   border-radius: 500px;
-  background-color: rgba(126, 126, 126, .5);
+  background-color: rgba(65, 75, 64, .5);
   justify-content: center;
   align-items: center;
-  border: 2px solid rgba(255, 255, 255, .5);
+  border: 2px solid rgba(0, 255, 0, .5);
 }
 
 .Circle-box .Circle-3 span {
@@ -581,6 +611,7 @@ body::-webkit-scrollbar-track {
   text-align: center;
   transform: translateY(100%);
   opacity: 0;
+  color: #00FF00;
 }
 
 .de-cent_text {
@@ -598,9 +629,10 @@ body::-webkit-scrollbar-track {
 .de-cent_text .de_cent_item h5 {
   font-size: 36px;
   font-weight: 500;
-  font-family: 'SONGERGrotesque-Medium';
+  font-family: "Anton", sans-serif;
   transform: translateY(100%);
   opacity: 0;
+  color: #00FF00;
 }
 
 .de-cent_text .de_cent_item p {
@@ -645,7 +677,7 @@ body::-webkit-scrollbar-track {
 .typeface .de-sys-item h1 {
   font-size: 48px;
   font-weight: 500;
-  font-family: 'SONGERGrotesque-Medium';
+  font-family: "Anton", sans-serif;
   text-align: center;
   transform: translateY(100%);
   opacity: 0;
@@ -668,11 +700,11 @@ body::-webkit-scrollbar-track {
 
 .typeface .de-sys-item .SONGER {
   color: #fff;
-  font-family: 'SONGERGrotesque-Medium';
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .typeface .de-sys-item .Racing {
-  font-family: "Racing Sans One", sans-serif;
+  font-family: "Anton", sans-serif;
   color: #B7B7B7;
 }
 
@@ -694,7 +726,7 @@ body::-webkit-scrollbar-track {
 .color .color-text {
   font-size: 48px;
   font-weight: 500;
-  font-family: 'SONGERGrotesque-Medium';
+  font-family: "Anton", sans-serif;
   text-align: center;
   transform: translateY(100%);
   opacity: 0;
@@ -723,7 +755,7 @@ body::-webkit-scrollbar-track {
 }
 
 .color .pallet .color-chip-2 {
-  background-color: #000;
+  background-color:  #00FF00;;
 }
 
 .color .pallet .color-name {
@@ -775,7 +807,8 @@ body::-webkit-scrollbar-track {
 .de-outp_text-box h5 {
   font-size: 20px;
   font-weight: 500;
-  font-family: 'SONGERGrotesque-Medium';
+  font-family: "Anton", sans-serif;
+  color: #00FF00;
 }
 
 .de_text-box {
@@ -893,12 +926,12 @@ body::-webkit-scrollbar-track {
   width: 250px;
   height: 250px;
   border-radius: 500px;
-  background-color: #fff;
+  background-color:  #00FF00;
   flex-direction: column;
-  color: #0D0D0D;
+  color: #fff;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0px 0px rgba(0, 121, 0, 0.5);
   border-radius: 50%;
   animation-name: wave;
   animation-duration: 1s;
@@ -908,19 +941,21 @@ body::-webkit-scrollbar-track {
 
 
 @keyframes wave {
-  0% {box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}
-  100% {box-shadow: 0 0 0px 20px rgba(255, 255, 255, 0);}
+  0% {box-shadow: 0 0 0px 0px rgba(0, 121, 0, 0.5);}
+  100% {box-shadow: 0 0 0px 20px rgba(18, 27, 17, 0);}
 }
 
 .de-outp_btn h1 {
-  font-size: 90px;
-  font-family: 'SONGERGrotesque-Medium';
+  font-size: 64px;
+  font-family: "Anton", sans-serif;
+  color: #003C00;
 }
 
 .de-outp_btn span {
   font-size: 16px;
   font-weight: 500;
   position: relative;
+  color: #003C00;
 }
 
 .de-outp_btn:hover span::after {
@@ -930,7 +965,7 @@ body::-webkit-scrollbar-track {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #0D0D0D;
+  background-color: #003C00;
 }
 /* <!-- Design Output --> */
 
